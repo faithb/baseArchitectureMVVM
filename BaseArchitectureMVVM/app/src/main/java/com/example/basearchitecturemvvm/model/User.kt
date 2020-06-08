@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName
  */
 
 data class User(
-    //todo dummy data
+    //todo dummy data for user
     @SerializedName("id") val id: Long,
     @SerializedName("employee_name") val name: String,
     @SerializedName("employee_salary") val salary: String,

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:text="Home"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvBang1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bg_categories_name"
+        android:gravity="center"
+        android:text="PRICE"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvBang2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bg_categories_name"
+        android:gravity="center"
+        android:text="FRUIT CLASSFICATION"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvBang3"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bg_categories_name"
+        android:gravity="center"
+        android:text="STATISTICS"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvBang4"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bg_categories_name"
+        android:gravity="center"
+        android:text="TOTAL"
+        android:textColor="#000000" />
+
+</LinearLayout>

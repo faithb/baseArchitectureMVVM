@@ -2,6 +2,9 @@
 
 package com.example.basearchitecturemvvm.extension
 
+import android.text.Editable
+import android.text.TextWatcher
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProviders
@@ -18,3 +21,16 @@ inline fun <reified T : ViewModel> Fragment.getViewModel(noinline creator: (() -
         ViewModelProviders.of(this, BaseVMFactory(creator))[T::class.java]
     }
 }
+
+internal fun TextView.afterTextChanged(afterTextChanged: (String) -> Unit) {
+    addTextChangedListener(object : TextWatcher {
+        override fun afterTextChanged(editable: Editable?) {
+            afterTextChanged.invoke(editable.toString())
+        }
+
+        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+    })
+}
+
